@@ -1,0 +1,3 @@
+<div *ngFor="let endpoint of endpoints">
+  <button (click)="callEndpoint(endpoint)">{{endpoint.name}} {{endpoint.success}}</button>
+</div>

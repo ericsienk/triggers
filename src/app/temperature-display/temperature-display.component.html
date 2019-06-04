@@ -1,0 +1,4 @@
+<div class="dial" *ngIf="temp">
+  <div class="degree">{{temp.f}}</div>
+  <div class="date">{{temp.lastUpdated.toDate() | date: 'medium'}}</div>
+</div>

@@ -1,0 +1,3 @@
+<a (click)="auth.isLoggedIn ? auth.logout() : auth.login()">
+{{auth.isLoggedIn ? auth.user.displayName : 'Login'}}
+</a>
