@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./temperature-display.component.scss']
 })
 export class TemperatureDisplayComponent implements OnInit {
-  temp: any;
+  sensorNames: any;
+  sensors: any = [];
   constructor(private responseService: ResponseService) { }
 
   ngOnInit() {
-    this.responseService.getResponse('temper').subscribe(v => this.temp = v);
+    this.responseService.getSensors().subscribe(s => this.sensors = s);
   }
-
 }

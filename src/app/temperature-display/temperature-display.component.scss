@@ -1,4 +1,20 @@
 .dial {
+  background: #34495e;
+  height: 90px;
+  width: 90px;
+  padding: 26px;
+  display: inline-block;
+  border-radius: 50%;
+  color: white;
+  border: #d0d7f1 solid 13px;
+  font-family: Helvetica, Arial;
+  text-align: center;
+}
 
+.degree {
+  font-size: 34px;
+}
 
+.date {
+  font-size: 12px;
 }

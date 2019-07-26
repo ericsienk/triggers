@@ -9,4 +9,12 @@ export class ResponseService {
   getResponse(id) {
     return this.db.collection('responses').doc(id).valueChanges();
   }
+
+  getSensor(id) {
+    return this.db.collection('sensors').doc(id).valueChanges();
+  }
+
+  getSensors() {
+    return this.db.collection('sensors').valueChanges();
+  }
 }

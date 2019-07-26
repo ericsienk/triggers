@@ -1,4 +1,5 @@
-<div class="dial" *ngIf="temp">
-  <div class="degree">{{temp.f}}</div>
-  <div class="date">{{temp.lastUpdated.toDate() | date: 'medium'}}</div>
+<div class="dial" *ngFor="let sensor of sensors">
+  <div class="degree">{{sensor.f | number: '1.0-1'}}°</div>
+  <div class="name">{{sensor.name | titlecase}}</div>
+  <div class="date">{{sensor.lastUpdated.toDate() | date: 'M/d/yy h:mm a'}}</div>
 </div>
